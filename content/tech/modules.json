@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "slug": "digital-identity-deep-dive",
+      "title": "Tech Module · Digital Identity Deep Dive",
+      "summary": "Understand your online footprint, secure accounts, and build intentional digital presence.",
+      "objective": "Participants evaluate and improve digital awareness, security, presence, and ownership.",
+      "lesson_points": [
+        "Run digital awareness audit on publicly visible information.",
+        "Implement baseline security improvements and password hygiene.",
+        "Refine profile, bio, and resume for professional consistency.",
+        "Define ownership strategy for digital identity and long-term goals."
+      ],
+      "cta_label": "Open Digital Identity Assessment",
+      "cta_href": "/tech/assessments/digital-identity"
+    }
+  ]
+}
