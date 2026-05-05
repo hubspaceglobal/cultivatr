@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "slug": "module-01-intention",
+      "title": "Module 01 · Intention",
+      "summary": "Define purpose, values, and foundational identity for regenerative business development.",
+      "objective": "Participants complete core self-discovery assessments and map personal mission to business goals.",
+      "lesson_points": [
+        "Complete role assessment and identify natural leadership posture.",
+        "Build a passion compass aligned to work and service goals.",
+        "Prioritize values with practical application in business decisions.",
+        "Draft a concise origin story and personal identity statement."
+      ],
+      "cta_label": "Open Self-Discovery Assessment",
+      "cta_href": "/rbd/assessments/self-discovery"
+    }
+  ]
+}

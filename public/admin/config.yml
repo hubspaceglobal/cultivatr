@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: hubspaceglobal/cultivatr
+  branch: main
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: auth
+
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://cultivatr.theartisanhub.space
+logo_url: /favicon.ico
+
+collections:
+  - name: rbd_modules
+    label: RBD Modules
+    label_singular: RBD Module
+    files:
+      - file: content/rbd/modules.json
+        label: RBD Modules Data
+        name: rbd_modules_file
+        format: json
+        fields:
+          - label: Modules
+            name: modules
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Summary, name: summary, widget: text }
+              - { label: Objective, name: objective, widget: text }
+              - label: Lesson Points
+                name: lesson_points
+                widget: list
+                field: { label: Point, name: point, widget: string }
+              - { label: CTA Label, name: cta_label, widget: string, required: false }
+              - { label: CTA Link, name: cta_href, widget: string, required: false }
+
+  - name: tech_modules
+    label: Tech Modules
+    label_singular: Tech Module
+    files:
+      - file: content/tech/modules.json
+        label: Tech Modules Data
+        name: tech_modules_file
+        format: json
+        fields:
+          - label: Modules
+            name: modules
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Summary, name: summary, widget: text }
+              - { label: Objective, name: objective, widget: text }
+              - label: Lesson Points
+                name: lesson_points
+                widget: list
+                field: { label: Point, name: point, widget: string }
+              - { label: CTA Label, name: cta_label, widget: string, required: false }
+              - { label: CTA Link, name: cta_href, widget: string, required: false }

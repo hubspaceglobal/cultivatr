@@ -1,0 +1,7 @@
+[build]
+command = "npm run build"
+cwd = "."
+output_dir = "out"
+
+[build.environment]
+NODE_VERSION = "22"
