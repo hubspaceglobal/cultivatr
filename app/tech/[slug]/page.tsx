@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return getTechModules().map((module) => ({ slug: module.slug }));
 }
 
-export default function TechModulePage({ params }: { params: { slug: string } }) {
-  const module = getTechModules().find((entry) => entry.slug === params.slug);
+export default async function TechModulePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const module = getTechModules().find((entry) => entry.slug === slug);
   if (!module) return notFound();
 
   return (

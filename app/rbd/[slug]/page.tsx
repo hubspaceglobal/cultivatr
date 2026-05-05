@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return getRbdModules().map((module) => ({ slug: module.slug }));
 }
 
-export default function RbdModulePage({ params }: { params: { slug: string } }) {
-  const module = getRbdModules().find((entry) => entry.slug === params.slug);
+export default async function RbdModulePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const module = getRbdModules().find((entry) => entry.slug === slug);
   if (!module) return notFound();
 
   return (
